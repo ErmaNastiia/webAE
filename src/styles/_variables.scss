@@ -1,0 +1,21 @@
+// ---------- Palette ----------
+$pink: #ffd6e8;
+$pink-deep: #ffb8d4;
+$orange: #ffe0c2;
+$orange-deep: #ffc79a;
+$ink: #4a3b45;
+$ink-soft: #7a6570;
+$white: #fffaf7;
+$accent: #ff9fb8;
+$accent-orange: #ffa672;
+
+$font-main: 'Roboto', sans-serif;
+
+$mobile-breakpoint: 780px;
+
+@mixin soft-hover($lift: -4px, $scale: 1.04) {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+  &:hover {
+    transform: translateY($lift) scale($scale);
+  }
+}
